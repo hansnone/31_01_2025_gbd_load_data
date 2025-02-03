@@ -7,7 +7,9 @@ CREATE TEMPORARY TABLE tabla_temporal (
     total INT
 );
 
-LOAD DATA INFILE '/home/pedro/Escritorio/31_01_2025_gbd_load_data/salarios.csv'
+-- Para cargar los archivos csv, uso linux, he tenido que poner el archivo en la carpeta raiz.
+
+LOAD DATA INFILE '/salarios.csv'
 INTO TABLE tabla_temporal
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
